@@ -1,0 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+:root {
+  --primary: "DM Sans", sans-serif;
+}
+body {
+  margin: 0px;
+  font-family: var(--primary);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.btn {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 5px 10px;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+// ===============start page====================
+.startPage_container {
+  height: 780px;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/61b1ed99-aa5e-4310-91cb-317f7140c653/38be61ec-acec-454e-a3d4-a81f5855cfd3/IN-en-20211220-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: cover;
+}
+.startPage_navbar {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.527) 0%, black 90%);
+  padding: 10px 100px;
+  display: flex;
+  gap: 20px;
+}
+.languae_btn {
+  margin-left: auto;
+}
+.signin_btn {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.languae_btn {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+
+  color: white;
+  padding: 10px 15px;
+}
+.hero_text_container_background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 720px;
+  background: linear-gradient(to top, black 0%,rgba(0, 0, 0, 0.726) 25%,rgba(0, 0, 0, 0.178) 50%,rgba(0, 0, 0, 0.411) 75%,rgba(0, 0, 0, 0.527) 90%);
+}
+.hero_text_container {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+  max-width:800px;
+  text-align: center;
+  .hero_title{
+    font-size: 70px;
+  }
+  .hero_subtitle{
+    font-size: 45px;
+  }
+  .smalltext{
+    font-size:20px;
+  }
+}
+.email_containr {
+  display:flex;
+  
+}
+.email_input_container{
+  width: 500px;
+  height:70px;
+}
+.email_submite_btn{
+  height:fit-content;
+  width:250px;
+  background-color: red;
+  border: 1px solid red;
+  border-left: 2px solid rgb(95, 0, 0);
+  color: white;
+  font-size:30px;
+  text-align: center;
+  
+}
+
+@media(max-width:900px){
+  .email_input_container{
+    max-width:200px;
+  }
+}
+// ==================Login Container============================
+.login_form{
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  padding: 50px;
+  padding-bottom: 150px;
+  background-color: rgba(0, 0, 0, 0.6);
+  gap: 30px;
+}
+.input{
+  border-radius:5px;
+  width:500px;
+  height: 70px;
+}
+.input_container{
+  display:flex;
+  flex-direction:column;
+  color: white;
+  font-size: 30px;
+}
+.submit_btn{
+  width: 492px;
+  text-align:center;
+  background-color:red;
+  color: white;
+  font-size: 20px;
+  border:1px solid red;
+}.msg_container{
+  color:white;
+}
+
+//==================navbar============================================
+.navbar_container_backgound {
+  background-color: rgba(0, 0, 0, 0.911);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  
+}
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header_logo {
+  background-color: transparent;
+  color:white;
+  font-weight:bold;
+  font-size: 17px;
+  text-shadow: 1px 1px 5px darkred;
+  display: flex;
+  &:hover{
+    color: red;
+    cursor: default;
+  }
+}
+// ============================genres container=========================
+.genraContainer_background {
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+
+  .genraContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 200px;
+  }
+}
+.genraContainer_outer {
+  display: flex;
+  gap: 100px;
+}
+.genraItem {
+  font-size: 25px;
+  .category_dot {
+    color: rgba(255, 0, 0, 0.37);
+  }
+  &:hover .category_dot {
+    color: red;
+  }
+}
+@media (max-width: 968px) {
+  .genraContainer_outer {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+  }
+  .genraItem {
+    font-size: 15px;
+  }
+}
+.closebtn {
+  height: 200px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  bottom: 0px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.253) 25%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.76) 75%,
+    black 100%
+  );
+  padding-bottom: 10px;
+}
+
+// =============================================
+.togglenavbar {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  flex-wrap: nowrap;
+}
+.navbar_container {
+  padding: 20px 100px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.911);
+  color: white;
+  gap: 20px;
+  flex-wrap: wrap;
+  z-index: 999;
+}
+.Categories {
+  display: flex;
+}
+.categoryItemContainer {
+  display: none;
+}
+
+.search {
+  margin-left: auto;
+}
+.navitem:hover {
+  color: rgb(165, 165, 165);
+}
+.navitm_options {
+  display: none;
+}
+.more {
+  cursor: pointer;
+}
+.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.logout-btn{
+  cursor: pointer;
+}
+.options {
+  background-color: rgba(0, 0, 0, 0.842);
+  border: 1px solid rgb(68, 68, 68);
+  padding: 2px 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: auto;
+}
+.slice {
+  height: 2px;
+  width: 25px;
+  border: 0.5px solid rgb(255, 255, 255);
+  background-color: white;
+}
+
+
+@media (max-width: 968px) {
+  .navbar_container {
+    padding: 10px 20px;
+  }
+  .togglenavbar {
+    display: none;
+  }
+  .showNav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    width: 100%;
+
+    .search {
+      margin: 0px;
+    }
+    background-color: rgb(0, 0, 0);
+  }
+}
+@media (min-width: 968px) {
+  .hamburger {
+    display: none;
+  }
+}
+// =====================================================================
+// heroConatiner========================================================
+.heroContainerBackground {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 768px;
+}
+.heroContainerBackground {
+  display: flex;
+
+  align-items: flex-end;
+}
+
+.category_container_background {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  color: white;
+  display: flex;
+  gap: 20px;
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(3, 3, 3, 0.5) 25%,
+    rgba(0, 0, 0, 0.747) 75%,
+    black 100%
+  );
+}
+.HeroTitle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 500px;
+  padding-left: 100px;
+}
+.hero_title {
+  font-size: 50px;
+  font-weight: bold;
+}
+.category_container,
+.category_contaier_second {
+  color: rgba(255, 255, 255, 0.507);
+  display: flex;
+  justify-content: center;
+  .redDot {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3px;
+  }
+}
+
+.category_contaier_second {
+  gap: 40px;
+}
+.mylist,
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.playbtn {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+@media (max-width: 968px) {
+  .heroContainerBackground {
+    height: 568px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .HeroTitle {
+    width: fit-content;
+    padding-left: 5px;
+  }
+  .hero_title {
+    font-size: 30px;
+  }
+  .hero_descpripction {
+    font-size: 15px;
+  }
+  .category_container {
+    flex-wrap: wrap;
+  }
+}
+// ============================Netflix orginals row===============
+.originalRow1 {
+  padding-top: 50px;
+}
+.netflix_originals.row {
+  display: flex;
+  padding: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.netflixrow_background {
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 10%);
+}
+.row::-webkit-scrollbar {
+  display: none;
+}
+.row_poster {
+  padding: 10px;
+
+  &:hover {
+    .row_img {
+      transform: scale(1.08);
+      transition: 0.3s;
+    }
+  }
+}
+.row_title {
+  color: white;
+  padding-left: 20px;
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.row_img {
+  height: 240px;
+  border-radius: 5px;
+}
+.originals {
+  height: 380px;
+}
+@media (max-width: 968px) {
+  .row_img {
+    height: 140px;
+  }
+  .originals {
+    height: 180px;
+  }
+}
+// ==========================================
+// ================Full details=========
+
+.fullDetail_Container {
+  background-color: black;
+  padding: 30px;
+  padding-top: 60px;
+  color: white;
+}
+.fullMovieDetaills {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.video_container {
+  display: flex;
+  justify-content: center;
+}
+.video {
+  width: 640px;
+  height: 360px;
+}
+.fullMovieDetaills.title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.metaData {
+  font-size: 15px;
+  display: flex;
+  gap: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  .adultTag {
+    color: rgba(255, 255, 255, 0.534);
+    background-color: rgba(128, 128, 128, 0.452);
+    border-color: black;
+    padding: 0px 5px;
+  }
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  .playbtn,
+  .downloadbtn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 35px;
+  }
+  .playbtn {
+    border-color: black;
+  }
+  .downloadbtn {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.452);
+    border-color: black;
+  }
+  .overview {
+    width: 500px;
+  }
+}
+.overview {
+  display: flex;
+  max-width: 900px;
+}
+@media (max-width: 768px) {
+  .btns {
+    flex-direction: column;
+  }
+  .playvideobtn,
+  .downloadbtn {
+    width: 90%;
+  }
+}
+// simillar container
+.simillar_background {
+  background-color: black;
+  padding: 40px;
+  padding-bottom: 10px;
+  .simillarborder {
+    border-top: 0.3px solid grey;
+  }
+}
+
+.simillar_title {
+  padding-top: 10px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+
+  font-weight: bold;
+  width: fit-content;
+  border-top: 4px solid red;
+}
+.similler_conatiner {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .simillarPoster {
+    padding: 10px;
+  }
+}
+.simillar_img {
+  border-radius: 5px;
+  height: 415px;
+  &:hover {
+    transform: scale(1.04);
+    transition: 0.2s;
+  }
+}
+@media (max-width: 968px) {
+  .simillar_img {
+    height: 155px;
+  }
+}
+// =======================================================
+// ===================categoryWiseMovies_container========
+.OuterDiv {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  gap: 50px;
+  background-color: black;
+}
+.movieHerobtns {
+  margin-bottom: 50px;
+}
+.categoryWise_Movie_container {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: black;
+}
+.categoryWise_Movie_container::-webkit-scrollbar {
+  display: none;
+}
+.categoryWise_Movie_container_background {
+  padding-left: 50px;
+  background-color: black;
+}
+.category_poster_img {
+  padding: 20px;
+  height: 360px;
+}
+.simillar_title_category {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .categoryWise_Movie_container_background {
+    padding: 0px 5px;
+  }
+  .categoryWise_Movie_container {
+    justify-content: center;
+  }
+  .category_poster_img {
+    height: 155px;
+    padding: 5px;
+  }
+}
+
+// ======Trending Page================
+.trending_page{
+  padding :0px 60px;
+  padding-top:200px;
+}
+.trending_title{
+  color: rgb(217,25,33);
+
+}
+// ===========coyrights==========
+.copyrights{
+  display: flex;
+  gap:2px;
+  color: rgba(255, 255, 255, 0.397);
+  padding-top:100px;
+}
+.login_form_copyrights{
+  justify-content:center;
+}
